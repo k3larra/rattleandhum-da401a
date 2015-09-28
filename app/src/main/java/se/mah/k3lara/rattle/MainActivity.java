@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     private static Firebase myFirebaseRef;
     private static final String TAG = "MainActivity";
-    private static String id = "134";
+    private static String id = "135";
     private SensorManager mSensorManager;
     private Sensor mAccelerolmeter;
     private static int triggervalue = 7;
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         try {
             int i = Integer.parseInt(dataSnapshot.getValue().toString());
             mVibrator.vibrate(i);
-        } catch (NumberFormatException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
