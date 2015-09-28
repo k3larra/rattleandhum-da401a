@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     private static Firebase myFirebaseRef;
     private static final String TAG = "MainActivity";
-    private static String id = "135";
+    private static String id = "11000";
     private SensorManager mSensorManager;
     private Sensor mAccelerolmeter;
     private static int triggervalue = 7;
